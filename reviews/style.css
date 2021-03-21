@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    /* justify-content: center; */
+    height: 100vh;
+    background-color:teal;
+    /* align-items: center; */
+}
+
+/* Review styling */
+
+main{
+    margin: auto;
+}
+
+.container{
+    color: #333;
+    width: 90%;
+    max-width: 650px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    min-height: 700px;
+}
+
+.reviews-title{
+    margin-bottom: 3em;
+    color: #ddd;
+}
+
+.title{
+    letter-spacing: 3px;
+    font-size: 2.5rem;
+}
+
+
+.line{
+    display: inline-block;
+    height: 5px;
+    width: 100px;
+    background-color:coral;
+    border-radius: 5px;
+}
+
+
+.content{
+    border-radius: 10px;
+    background-color: #ededed;
+    padding: 1.5em;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Image styling */
+
+.img-container{
+    z-index: 1;
+    position: relative;
+}
+
+.person-img{
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.person-img::before{
+    content: "";
+    background-color: coral;
+    border-radius: 50%;
+    display: block;
+    left: 8px;
+    height: 150px;
+    position: absolute;
+    top:-5px;
+    width: 150px;
+    z-index: -1;
+    
+}
+
+.person-img::after{
+    content: "\" ";
+    background-color: coral;
+    border-radius: 50%;
+    color: #eee;
+    display: block;
+    font-size: 2.5rem;
+    left: 5px;
+    height: 35px;
+    position: relative;
+    top:10px;
+    width: 35px;
+
+}
+
+/* End image styling */
+
+.info{
+    margin: 1em 0;
+}
+
+.name{
+    letter-spacing: 2px;
+    margin-bottom: 0.25em;
+    text-transform: uppercase;
+}
+.position{
+    color: coral;
+    text-transform: uppercase;
+    font-size: 0.75em;
+}
+
+.bio{
+    color: #555;
+    margin-bottom: 0.5em;
+}
+
+.arrows{
+    margin-bottom: 0.5em;
+}
+
+.fa-angle-left{
+    margin-right: 10px;
+    color: tomato;
+    cursor: pointer;
+}
+.fa-angle-right{
+    margin-left: 10px;
+    color: tomato;
+    cursor: pointer;
+}
+
+.random{
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid coral;
+    color: #444;
+    cursor: pointer;
+    padding: 0.5em 0.5em;
+    font-weight: bold;
+    outline: none;
+    transition: background-color .5s ease, color .6s ease;
+
+}
+
+.random:hover{
+    background-color: coral;
+    color: #eee;
+}
+
+
+/* End review styling */

@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1C1C1C;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #555;
+}
+
+/* Navbar styling */
+
+header{
+    padding: 3rem 0;
+}
+
+.container{
+    display: flex;
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.nav{
+    background-color: #fff;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    left: 0;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    transform: translateX(-100%);
+    transition: transform .7s ease-in-out;
+    width: 30%;
+    z-index: 1;
+}
+
+.show-nav{
+    transform: translateX(0);
+}
+
+.nav-header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    padding: 1rem 2rem;
+}
+
+.logo{
+    letter-spacing: 3px;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.logo span{
+    color: steelblue;
+}
+
+.exit{
+    color: #f44336;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: transform .8s ease-in-out;
+}
+
+.exit:hover{
+    transform: rotate(720deg);
+}
+
+.nav-links{
+    margin-bottom: 1rem;
+}
+
+.nav-links li{
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+    padding-left: 1rem;
+    transition: all .5s ease;
+}
+
+.nav-links li:hover{
+    background-color: #ddd;
+    color: #fff;
+    cursor: pointer;
+    padding-left: 1.5rem;
+}
+
+.social-links{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-bottom: 2.5rem;
+}
+
+.social-links li{
+    cursor: pointer;
+    transition: color .5s ease;
+}
+
+.social-links li:hover{
+    color: #1C1C1C;
+}
+
+.social-links li i{
+    font-size: 1.5rem;
+}
+
+.burger{
+    animation: scaleBurger 1s ease-in-out infinite alternate;
+    cursor: pointer;
+    margin-left: auto;
+    width: 30px;
+}
+
+.line{
+    background-color: #eee;
+    height: 4px;
+    margin-bottom: 5px;
+}
+
+
+
+/* Navbar styling */
+
+
+
+
+/* Navbar animation */
+@keyframes scaleBurger{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+/* End navbar animation */
+
+
+/* Responsive navbar */
+@media screen and (max-width:1070px){
+    .nav{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:780px){
+    .nav{
+        width: 100%;
+    }
+    .logo{
+        font-size: 20px;
+    }
+}
+/* End responsive navbar */

@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Navigation styling */
+header{
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1170px;
+    min-height: 8vh;
+    margin:0 auto;
+    width: 90%;
+}
+
+.logo-name{
+    color: #222;
+    font-weight: 400;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo-name span{
+    color: steelblue;
+}
+
+.burger{
+    cursor: pointer;
+    display: none;
+    margin-right: 1rem;
+    transition: transform .5s ease;
+    width: 25px;
+}
+
+.burger:hover{
+    transform: rotate(90deg);
+}
+
+
+.line{
+    background-color: steelblue;
+    width: 100%;
+    height: 3px;
+    margin-bottom: 4px;
+}
+
+.nav-links{
+    list-style-type: none;
+    color: #555;
+    display: flex;
+    font-size: 1.1rem;
+    list-style-type: none;
+}
+.nav-links li{
+    cursor: pointer;
+    letter-spacing: 1px;
+    padding-left: 1rem;
+    transition: color .5s ease;
+}
+
+.nav-links li:hover{
+    color: steelblue;
+}
+
+.social-links{
+    color: steelblue;
+    display: flex;
+    list-style-type: none;
+}
+
+.social-links li{
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: color .5s ease;
+}
+
+.social-links li:hover{
+    color: hsl(205, 78%, 60%);
+}
+
+/* End navigation styling */
+
+/* Responsive navbar */
+
+@media screen and (max-width:800px){
+    
+    .container{
+        display: block;
+        width: 100%;
+    }
+
+    .logo{
+        margin-left: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .nav-links{
+        display: block;
+        height: 0;
+        overflow-y:hidden;
+        transition: height 1s ease;
+    }
+    .nav-links li{
+        height: 40px;
+        padding: 0.5rem 1rem;
+        transition: all .5s ease;
+    }
+
+    .nav-links li:hover {
+        background-color: hsl(205, 86%, 81%);
+        padding-left: 1.5rem;
+    }
+
+    
+    .social-links{
+        display: none;
+    }
+
+    .show-nav{
+        height: 10rem;
+    }
+
+}
+
+
+/* End responsive navbar */

@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #cfcfcf;
+    color: #444;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main{
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1270px;
+    width: 90%;
+}
+
+.header{
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.title{
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+}
+
+.subtitle{
+    color: steelblue;
+}
+
+.place{
+    margin-bottom: 2rem;
+}
+
+.place-img{
+    background-image: url("./hero-bcg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: .75rem;
+    height: 300px;
+    margin-bottom: 2.5rem;
+}
+
+.tabs{
+    background-color: #bbb;
+    border-radius:.5rem .5rem 0 0 ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+}
+
+.tabs li{
+    border-radius:.5rem .5rem 0 0 ;
+    color: #222;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding: 1rem 0;
+    transition: background-color .5s ease-in-out;
+    text-align: center;
+    width: 100%;
+}
+
+.tabs li:hover{
+    background-color: #fff;
+}
+
+.place-info{
+    background-color: #fff;
+    border-radius: 0 0 .5rem .5rem;
+    display: none;
+    padding: 1rem;
+}
+
+.active-article{
+    display: block;
+}
+
+.active-tab{
+    background-color: #fff;
+}
+
+.description-header{
+    font-size: 1rem;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.description{
+    color: #777;
+    margin-bottom: 2rem;
+}
+
+/* Responsive */
+
+
+
+@media screen and (min-width:980px){
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    .place-img{
+        height: 320px;
+    }
+
+    .description{
+        font-size: 1.25rem;
+    }
+    /* .place-img{
+        width: 500px;
+    } */
+}
+
+@media screen and (min-width:800px){
+    .title{
+        font-size: 2.5rem;
+    }
+    .subtitle{
+        font-size: 1.25rem;
+    }
+}
