@@ -5,9 +5,9 @@ This repository contains a collection of small web projects created using HTML, 
 ## Project List
 
 * [SimpleForm](./SimpleForm)
-* [SortingAlgorithms](./SortingAlgorithms)
-* [ToDoApp](./ToDoApp)
-* [Color Flipper](./color flipper)
+* [SortingAlgorithms](./sorting-algorithms)
+* [ToDoApp](./to-do-app)
+* [Color Flipper](./color-flipper)
 * [Countdown Timer](./countdown-timer)
 * [Counter](./counter)
 * [Menu](./menu)
